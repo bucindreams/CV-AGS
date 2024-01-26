@@ -1,0 +1,10 @@
+/* Product Post Css by The Pro Project */.st svg{fill:#ffd447}
+.border_and_bg{background-color:#fff;border-radius:10px;padding:15px;box-shadow:rgba(0,0,0,.24) 0 3px 8px;background-color:#fff;opacity:1;background-image:radial-gradient(#eee 2px,#fff 2px);background-size:40px 40px}.img_cas img{border-radius:10px;border:1px solid gray}a:link{text-decoration:none}.orginal_price{font-size:30px;color:#1f93ff}
+.drK .border_and_bg{box-shadow:0 10px 30px rgba(225,225,225,.1);background-color:#323332;opacity:1;background-image:radial-gradient(#424242 2px,#323332 2px);background-size:40px 40px}
+
+/*Number List*/
+ol.style2{counter-reset:numbers;list-style:none;padding:0}ol.style2>li{counter-increment:numbers;margin-bottom:25px;position:relative;margin-left:55px}ol.style2>li img{margin:15px 0;width:100%;display:block}ol.style2>li::before{content:counter(numbers);line-height:23px;font-family:'var(--fontB)';font-size:14px;font-weight:700;left:-45px;width:32px;height:32px;text-align:center;position:absolute;color:var(--linkB);border:5px solid #cdcdcd;border-radius:50% 0 50% 50%;top:-2px}ol.style2 li ul li{margin-bottom:15px}ol.style2 li ul{margin-top:15px}.drK ol.style2>li::before{color:var(--darkT);border-color:var(--darkU)}
+.drK ol.style1 > li::before{border-color:rgb(76 79 77);color:rgb(176 179 184)}
+
+/* Garis Decoration */ .h2-h3-style h3{position:relative;padding:0 0 15px 0;border-bottom:2px solid rgba(0,0,0,.05)} .h2-h3-style h3:after,p.title-tag-ctd:after{content:'';position:absolute;bottom:-2px;left:0;right:0;background:var(--linkB) !important;width:12%;height:2px} .h2-h3-style a:hover{text-decoration:underline} .drK .h2-h3-style h3:after,p.title-tag-ctd:after{background:var(--darkU) !important; }
+/* Garis Decoration Left */ .h2-h3-style h2{display:block;padding:0px 22px;border-left:4px solid var(--linkB);font-size:1.45rem;border-radius:4px;} .h2-h3-style h2 a:link{color:inherit;text-decoration:none} .h2-h3-style h2 a:visited{color:inherit;} .drK .h2-h3-style h2{ border-left:4px solid var(--darkU); }

@@ -1,0 +1,34 @@
+/* partner page by wendy code ubah warna cari kode var(--linkB) */
+.wc-pt-usr img{position:absolute;width:85px;border-radius:30px 30px 5px;top:15px}
+.wc-pt-usr{position:relative;padding:15px;padding-bottom:0;border-radius:30px 0 30px;;background-color:#fefefe;box-shadow:0 2px 12px -2px rgb(0 0 0 / 12%);border:1px solid #ddd;margin-top:25px}
+.wc-pt-usr h2{margin-left:100px;margin-top:5px;font-size:16px;color:#969696}
+.wc-pt-usr h2:before{content:attr(aria-label);position:absolute;margin-top:25px;font-size:12px;font-style:italic;color:var(--linkB)}
+.wc-pt-usr p{font-size:12px;color:#48525c;line-height:1.3em}
+.wc-pt-usr .wc-pt-kt{margin-left:60px;display:flex;list-style:none;font-size:10px;color:#48525c;}
+.wc-pt-usr .wc-pt-kt li{margin-right:10px;margin-top:10px;border-radius:3px;border:1px solid #ddd;padding:5px;line-height:1.5em;white-space:nowrap;}
+.wc-pt-usr a{display:flex;align-items:center;margin-bottom:10px;font-size:14px;color:var(--linkB)}
+.wc-pt-usr a:before{content:attr(aria-label)}
+.wc-pt-usr a svg{height:18px;margin:5px;stroke:var(--linkB)!important;fill:none!important}
+.wc-ptpop-wrap,.wc-ptsypop-wrap{position:fixed;height:100%;width:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.5);z-index:9999999;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);z-index:9999999;opacity:0;visibility:hidden;transition:all 0.3s ease}
+.wc-ptpop-wrap.aktif,.wc-ptsypop-wrap.aktif{opacity:1;visibility:visible}
+.wc-ptpop-wrap .wc-ptstr-pop h2,.wc-ptsypop-wrap .wc-ptsy-pop h2{font-size:16px;color:#969696;text-align:center}
+a.wc-ptpop-btn{display:flex;align-items:center;justify-content:center;padding:15px;outline:0;border:0; border-radius:3px;line-height:1em; color:#fff;background-color:var(--linkB);font-size:14px;font-weight:bold;white-space:nowrap;overflow:hidden;width:96;margin:30px 10px}
+.wc-ptpop-cls{position:absolute;top:15px;right:15px;width:30px;height:30px;background-color:#f3f3f3;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z' fill='%23878787'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:25px;background-position:center;cursor:pointer;border-radius:50%;z-index:10}
+.wc-btnpt-wrap{display:flex;justify-content:center;margin:20px 0 0}
+.wc-ptstr-pop,.wc-ptsy-pop{position:relative;top:50%;left:50%;padding:20px;display:inline-block;background-color:#fefefe;flex-direction:column;width:100%;max-width:800px;max-height:calc(100% - 40px);border-radius:5px;transform: translate(-50% , -50%) scale(0.97);overflow:auto}
+.wc-pt-inp{position:relative;margin:20px auto;}
+.wc-pt-inp input[type=text]{font-size:15px;padding:15px 0 15px 12px;display:block;width:100%;border:1px solid #ddd;border-radius:5px;background-color:#fefefe}
+.wc-pt-inp input[type=text]:focus,.wc-pt-inp input[type=text]:hover{outline:none;border-color:var(--linkB)!important;background-color:#fefefe}
+.wc-pt-inp input[type=text]::-webkit-input-placeholder{color:#a5a5a5;font-size:12px}
+.wc-pt-inp label{color:#999;border-radius:20px;font-size:14px;font-weight:500;position:absolute;pointer-events:none;left:15px;top:15px;transition:.2s ease all}
+.wc-pt-inp input[type=text]:valid~label{top:-25px!important;font-size:13px;color:var(--linkB);font-weight:700;padding:1px 7px;margin:10px 0 0 -5px;background-color:#fefefe}
+  
+/* sembunyikan label k4 dan seterusnya hanya pada layar 600px ke bawah */
+@media screen and (max-width: 600px){.wc-pt-kt li:nth-child(n+4){display:none}}
+/* sembunyikan label k7 dan seterusnya hanya pada layar 800px ke bawah */
+@media screen and (max-width: 800px){.wc-pt-kt li:nth-child(n+7){display:none}}
+  
+/* CSS darkmode sesuaikan class ( .drK ) dengan template yang kalian gunakan agar dapat berfungsi */
+.drK .wc-pt-usr,.drK .wc-ptsy-pop,.drK .wc-ptpop-cls,.drK .wc-ptstr-pop,.drK .wc-pt-inp input[type=text]:valid~label,.drK .wc-pt-inp input[type=text]:focus,.drK .wc-pt-inp input[type=text]:hover{background-color:#2d2d30}
+.drK .wc-pt-usr p,.drK .wc-pt-usr h2,.drK .wc-pt-kt,.drK .wc-ptsy-pop p,.drK .wc-ptsy-pop h2,.drK .wc-ptstr-pop p,.drK .wc-ptstr-pop h2{color:#fefefe}
+.drK .wc-pt-usr,.drK .wc-pt-kt li{border-color:rgba(255,255,255,.1)}
