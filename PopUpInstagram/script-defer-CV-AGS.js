@@ -1,0 +1,15 @@
+document.addEventListener('DOMContentLoaded', function () {
+      // HTML Script
+      const htmlContent = `
+<style>/* IG NOTIFIKASI */@keyframes show_ardaIG{0%{transform:translateX(100%)}40%{transform:translateX(-10%)}80%{transform:translateX(0%)}100%{opacity:1;pointer-events:auto;transform:translateX(-10px)}}@keyframes hide_ardaIG{0%{transform:translateX(-10px)}40%{transform:translateX(0%)}80%{transform:translateX(-10%)}100%{transform:translateX(calc(100% + 100px))}}.ardaIGwrap{position:fixed;z-index:9999999;right:55px;bottom:20px;animation:show_ardaIG 0.8s ease forwards;box-shadow:0 5px 12px rgba(0,0,0,0.2);border-radius:10px;background:#fff;padding:10px;border-left:5px solid var(--linkB);width:300px;align-items:center;justify-content:space-between;display:none}.ardaIGwrap.hide{animation:hide_ardaIG 0.8s ease forwards}.ardaIGcontent{display:flex;align-items:center}.ardaIGicon .wendylogo{max-width:60px;border-radius:100%;transition:all 0.3s ease}.ardaIGcontent .ardaIGdetails{margin-left:15px;text-decoration:none;outline:none}.ardaIGdetails span{font-family:Noto Sans;position:relative;font-size:18px;font-weight:600;color:#000000;top:10px}.ardaIGdetails p{color:#878787;font-size:12px}.ardaIGcloseIcon svg{position:absolute;fill:#878787;font-size:20px;cursor:pointer;height:28px;width:28px;text-align:center;right:13px;top:8px;border-radius:50%;background:#f2f2f2;transition:all 0.3s ease}.ardaIGwrap:hover .ardaIGicon img{-webkit-transform:rotate(360deg);transform:rotate(360deg)}.ardaIGcloseIcon:hover svg{fill:#444}@media screen and (max-width:480px){.ardaIGwrap{right:25px}}.drK .ardaIGwrap,.drK .ardaIGcloseIcon svg{background:#2d2d30}.drK .ardaIGwrap{border-color:#444}.drK .ardaIGdetails span,.drK .ardaIGdetails p{color:#e2e2e2}</style>
+<div class='ardaIGwrap'><div class='ardaIGcontent'><div class='ardaIGicon'><img alt='Arda_Garage_Speed' class='wendylogo' src='https://telegra.ph/file/63ac85086ed6f714a04cb.jpg'/></div><a class='ardaIGdetails' href='https://bit.ly/igArdaGarage' target='_blank'><span>Arda Garage</span><p>Follow Instagram Kami Juga Ya</p></a></div><div class='ardaIGcloseIcon'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div></div>
+`;
+      document.getElementById('instagramCVAGS').innerHTML = htmlContent;
+    });
+    
+    
+//pop up instagram by Arda Ganz
+var time = 4000;
+var welcomeSession = sessionStorage.getItem('welcomeSession');if(welcomeSession === null){$(window).bind('load',function(){setTimeout(function(){$('.ardaIGwrap').css("display","block");welcomeSession = sessionStorage.setItem('welcomeSession',true)}
+,time);$('.ardaIGcloseIcon').click(function(){$('.ardaIGwrap').addClass('hide')}
+)})}
